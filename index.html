@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PianoPlayerWithSounds</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="melodyList.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<p class='title'>Melody Saver</p>
+
+<div class="sounds">
+  <audio id="c">
+    <source src="sample/1.%20C1.wav" type="audio/wav">
+  </audio>
+  <audio id="cSharp">
+    <source src="sample/2.%20C%231.wav" type="audio/wav">
+  </audio>
+  <audio id="d">
+    <source src="sample/3.%20D1.wav" type="audio/wav">
+  </audio>
+  <audio id="dSharp">
+    <source src="sample/4.%20D%231.wav" type="audio/wav">
+  </audio>
+  <audio id="e">
+    <source src="sample/5.%20E1.wav" type="audio/wav">
+  </audio>
+  <audio id="f">
+    <source src="sample/6.%20F1.wav" type="audio/wav">
+  </audio>
+  <audio id="fSharp">
+    <source src="sample/7.%20F%231.wav" type="audio/wav">
+  </audio>
+  <audio id="g">
+    <source src="sample/8.%20G1.wav" type="audio/wav">
+  </audio>
+  <audio id="gSharp">
+    <source src="sample/9.%20G%231.wav" type="audio/wav">
+  </audio>
+  <audio id="a">
+    <source src="sample/10.%20A1.wav" type="audio/wav">
+  </audio>
+  <audio id="aSharp">
+    <source src="sample/11.%20A%231.wav" type="audio/wav">
+  </audio>
+  <audio id="b">
+    <source src="sample/12.%20B1.wav" type="audio/wav">
+  </audio>
+  <audio id="c1">
+    <source src="sample/13.%20C2.wav" type="audio/wav">
+  </audio>
+  <audio id="c1Sharp">
+    <source src="sample/14.%20C%232.wav" type="audio/wav">
+  </audio>
+  <audio id="d1">
+    <source src="sample/15.%20D2.wav" type="audio/wav">
+  </audio>
+  <audio id="d1Sharp">
+    <source src="sample/16.%20D%232.wav" type="audio/wav">
+  </audio>
+  <audio id="e1">
+    <source src="sample/17.%20E2.wav" type="audio/wav">
+  </audio>
+  <audio id="f1">
+    <source src="sample/18.%20F2.wav" type="audio/wav">
+  </audio>
+  <audio id="f1Sharp">
+    <source src="sample/19.%20F%232.wav" type="audio/wav">
+  </audio>
+  <audio id="g1">
+    <source src="sample/20.%20G2.wav" type="audio/wav">
+  </audio>
+  <audio id="g1Sharp">
+    <source src="sample/21.%20G%232.wav" type="audio/wav">
+  </audio>
+  <audio id="a1">
+    <source src="sample/22.%20A2.wav" type="audio/wav">
+  </audio>
+  <audio id="a1Sharp">
+    <source src="sample/23.%20A%232.wav" type="audio/wav">
+  </audio>
+  <audio id="b1">
+    <source src="sample/24.%20B.wav" type="audio/wav">
+  </audio>
+  <audio id="c2">
+    <source src="sample/25.%20C3.wav" type="audio/wav">
+  </audio>
+</div>
+
+<div id='piano'>
+  <section class="piano">
+    <section id='c-key' class="key white-key" sound="c">
+      <section class='keynote'>C</section>
+    </section>
+    <section id='c-sharp-key' class="key black-key" sound="cSharp">
+      <section class='black-keynote'>C#</section>
+    </section>
+    <section id='d-key' class="key white-key" sound="d">
+      <section class='keynote'>D</section>
+    </section>
+    <section id='d-sharp-key' class="key black-key" sound="dSharp">
+      <section class='black-keynote'>D#</section>
+    </section>
+    <section id='e-key' class="key white-key" sound="e">
+      <section class='keynote'>E</section>
+    </section>
+    <section id='f-key' class="key white-key" sound="f">
+      <section class='keynote'>F</section>
+    </section>
+    <section id='f-sharp-key' class="key black-key" sound="fSharp">
+      <section class='black-keynote'>F#</section>
+    </section>
+    <section id='g-key' class="key white-key" sound="g">
+      <section class='keynote'>G</section>
+    </section>
+    <section id='g-sharp-key' class="key black-key" sound="gSharp">
+      <section class='black-keynote'>G#</section>
+    </section>
+    <section id='a-key' class="key white-key" sound="a">
+      <section class='keynote'>A</section>
+    </section>
+    <section id='a-sharp-key' class="key black-key" sound="aSharp">
+      <section class='black-keynote'>A#</section>
+    </section>
+    <section id='b-key' class="key white-key" sound="b">
+      <section class='keynote'>B</section>
+    </section>
+    <section id='high-c-key' class="key white-key" sound="c1">
+      <div class='keynote'>C1</div>
+    </section>
+    <section id='second-c-sharp-key' class="key black-key" sound="c1Sharp">
+      <section class='black-keynote'>C#1</section>
+    </section>
+    <section id='second-d-key' class="key white-key" sound="d1">
+      <section class='keynote'>D1</section>
+    </section>
+    <section id='second-d-sharp-key' class="key black-key" sound="d1Sharp">
+      <section class='black-keynote'>D#1</section>
+    </section>
+    <section id='second-e-key' class="key white-key" sound="e1">
+      <section class='keynote'>E1</section>
+    </section>
+    <section id='second-f-key' class="key white-key" sound="f1">
+      <section class='keynote'>F1</section>
+    </section>
+    <section id='second-f-sharp-key' class="key black-key" sound="f1Sharp">
+      <section class='black-keynote'>F#1</section>
+    </section>
+    <section id='second-g-key' class="key white-key" sound="g1">
+      <section class='keynote'>G1</section>
+    </section>
+    <section id='second-g-sharp-key' class="key black-key" sound="g1Sharp">
+      <section class='black-keynote'>G#1</section>
+    </section>
+    <section id='second-a-key' class="key white-key" sound="a1">
+      <section class='keynote'>A1</section>
+    </section>
+    <section id='second-a-sharp-key' class="key black-key" sound="a1Sharp">
+      <section class='black-keynote'>A#1</section>
+    </section>
+    <section id='second-b-key' class="key white-key" sound="b1">
+      <section class='keynote'>B1</section>
+    </section>
+    <section id='second-c-key' class="key white-key" sound="c2">
+      <section class='keynote'>C2</section>
+    </section>
+  </section>
+</div>
+
+<div id='list'>
+  <section id='melody-list'>
+
+    <!-- to do list-->
+    <div id="myDIV" class="header">
+      <h2>My melodies</h2>
+
+    </div>
+
+    <ul id="myUL">
+
+    </ul>
+
+
+  </section>
+</div>
+
+
+<div id='recording'>
+
+  <div id='recording-area'>
+    <span id='start-recording' class='button-recording'>START</span>
+    <span id='save-recording' onclick="newElementFromLi()" class="button-recording">SAVE</span>
+    <input id="melody-title" type="text" placeholder="Add title">
+    <textarea id="melody-text" class="melody-text" type="text" rows="14" cols="10" wrap="soft"></textarea>
+  </div>
+
+</div>
+
+
+<script  src="main.js"></script>
+<script  src="server.js"></script>
+<script  src="MelodyList.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: lightgrey;
+}
+.title{
+  font-size: 50px;
+  margin-top: 10px;
+  font-family: 'Garamond, serif';
+  margin-bottom: 10px;
+  padding: 0;
+  color: darkslategrey;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#demo{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  color: #e34a12;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.piano{
+  width: 516px;
+  height: 210px;
+  display: block;
+  margin: 0 auto;
+  background-color: lightgrey;
+  /*border: solid red 2px;*/
+}
+.white-key{
+  width: 30px;
+  height: 200px;
+  display: inline-block;
+  border: solid #141c3a 2px;
+  box-shadow: 2px 3px;
+  background-color: white;
+  color: #141c3a;
+}
+.black-key{
+  width: 25px;
+  height: 100px;
+  display: inline-block;
+  background-color: #141c3a;
+  color: white;
+  position: absolute;
+  margin-left: -12px;
+  padding: 0px;
+}
+.keynote{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 175px;
+  color: #141c3a;
+}
+.black-keynote{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.key-active {
+  background-color: #e3d6d6;
+}
+
+#main {
+  width: 90%;
+  height: 90%;
+}
+
+#piano, #list {float:left; display:inline; width: 49%;}
+
+#piano {
+  margin-top: 50px;
+
+}
+
+#list {
+  width: 462px;
+  height: 210px;
+  margin-top: 50px;
+  /*border: solid red 2px;*/
+}
+#melody-list{
+  width: 462px;
+  height: 210px;
+  background-color: white;
+  border-radius: 15px;
+
+}
+
+#melody-list h2{
+  text-align: center;
+  color: #3a3b40;
+  font-size: 30px;
+}
+
+#melody-list li{
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  color: #3a3b40;
+}
+
+#melody-list ul{
+  list-style-type: none;
+}
+
+
+#recording {
+  width: 516px;
+  height: 210px;
+  display: block;
+  background-color: whitesmoke;
+  float: left;
+  margin-top: 40px;
+  margin-left: 155px;
+  border-radius: 15px;
+  box-shadow: 0 4px lightgrey;
+}
+
+#recording-area{
+  margin: 10px auto;
+  width: 516px;
+  height: 210px;
+  background-color: whitesmoke;
+}
+
+
+.button-recording {
+  margin: 20px 5px 20px 10px ;
+  padding: 10px;
+  width: 120px;
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #504242;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+  background-color: #eeeeee;
+}
+
+
+#melody-text {
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+  background-color: whitesmoke;
+  font-size: 30px;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-scrolling: auto;
+
+}
+
+#melody-title {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+  height: 80px;
+  background-color: whitesmoke;
+  font-size: 30px;
+  position: relative;
+  display: flex;
+
+}
+
+.stop {
+  color: #fd4f1a;
+}
+
+.stopRecording {
+  animation: mymove 1s infinite;
+  border: #fd4f1a solid 4px;
+}
+
+.startRecording {
+  background-color: lightgrey;
+  border: #fd4f1a solid 4px;
+}
+
+@keyframes mymove {
+  from {background-color: lightgrey}
+  to {background-color: #c6c6c6;
+  }
+}

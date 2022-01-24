@@ -1,0 +1,93 @@
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+.close {
+    /*position: absolute;*/
+    position: relative;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.download {
+    /*position: absolute;*/
+    position: relative;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: 8px 16px 8px 16px;
+}
+
+.download:hover {
+    background-color: #77e0b5;
+    color: white;
+}
+
+.download .close {
+    display: inline-block;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.saveRecording:hover {
+    background-color: #bbb;
+}
